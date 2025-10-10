@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pingo Sweets - Doces Artesanais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">Pingo Sweets</h1>
+                <nav class="nav">
+                    <a href="#home" class="nav-link">Início</a>
+                    <a href="#products" class="nav-link">Produtos</a>
+                    <a href="#about" class="nav-link">Sobre</a>
+                    <a href="#contact" class="nav-link">Contato</a>
+                </nav>
+                <button class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">Sobremesas Artesanais Sob Encomenda</h2>
+                    <p class="hero-description">
+                        Adentrando o mundo da Confeitaria
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn btn-primary">Ver Produtos</a>
+                        <a href="#contact" class="btn btn-secondary">Fazer Pedido</a>
+                    </div>
+                </div>
+                <div class="hero-images">
+                    <div class="image-card" data-tilt>
+                        <img src=".imagens/ninho-nutella.png" alt="Brigadeiros de ninho com nutella">
+                    </div>
+                    <div class="image-card" data-tilt>
+                        <img src=".imagens/tradicional.png" alt="Brigadeiros tradicionais">
+                    </div>
+                    <div class="image-card" data-tilt>
+                        <img src="..imagens/morango-do-amor.png" alt="Morango do Amor">
+                    </div>
+                    <div class="image-card" data-tilt>
+                        <img src="..imagens/morango-brigadeiro.png" alt="Cake pops">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Doces</h2>
+                <p class="section-description">Explore nossa deliciosa variedade de doces artesanais</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/colorful-brigadeiros-chocolate-truffles.jpg" alt="Brigadeiros Gourmet">
+                        <button class="favorite-btn" aria-label="Favoritar">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Brigadeiros Gourmet</h3>
+                        <p class="product-description">Brigadeiros artesanais com diversos sabores e coberturas especiais</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 3,50/un</span>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/colorful-cupcakes-with-frosting.jpg" alt="Cupcakes Decorados">
+                        <button class="favorite-btn" aria-label="Favoritar">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Cupcakes Decorados</h3>
+                        <p class="product-description">Cupcakes fofos com coberturas cremosas e decorações personalizadas</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 8,00/un</span>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/colorful-macarons-french-pastries.jpg" alt="Macarons Franceses">
+                        <button class="favorite-btn" aria-label="Favoritar">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Macarons Franceses</h3>
+                        <p class="product-description">Delicados macarons com recheios variados e sabores únicos</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 6,00/un</span>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/colorful-cake-pops-dessert.jpg" alt="Cake Pops">
+                        <button class="favorite-btn" aria-label="Favoritar">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Cake Pops</h3>
+                        <p class="product-description">Bolinhos no palito cobertos com chocolate e decorações divertidas</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 5,00/un</span>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Trufas Gourmet">
+                        <button class="favorite-btn" aria-label="Favoritar">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Trufas Gourmet</h3>
+                        <p class="product-description">Trufas de chocolate belga com recheios cremosos e sofisticados</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 4,50/un</span>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Brownies">
+                        <button class="favorite-btn" aria-label="Favoritar">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Brownies</h3>
+                        <p class="product-description">Brownies densos e úmidos com chocolate belga e nozes crocantes</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 7,00/un</span>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre a Doce Encanto</h2>
+                    <p class="about-description">
+                        Há mais de 10 anos criando momentos doces e inesquecíveis. Nossa paixão por confeitaria 
+                        artesanal nos motiva a buscar sempre a perfeição em cada detalhe, desde a seleção dos 
+                        ingredientes até a apresentação final.
+                    </p>
+                    <p class="about-description">
+                        Acreditamos que cada doce conta uma história e carrega o poder de transformar momentos 
+                        comuns em celebrações especiais. Por isso, colocamos amor e dedicação em cada receita.
+                    </p>
+                    <div class="features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🎂</div>
+                            <h3 class="feature-title">Receitas Exclusivas</h3>
+                            <p class="feature-description">Desenvolvidas com carinho pela nossa equipe</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🌟</div>
+                            <h3 class="feature-title">Ingredientes Premium</h3>
+                            <p class="feature-description">Selecionados para garantir qualidade superior</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">💝</div>
+                            <h3 class="feature-title">Feito com Amor</h3>
+                            <p class="feature-description">Cada doce é preparado artesanalmente</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="/placeholder.svg?height=500&width=500" alt="Nossa confeitaria">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-description">Faça seu pedido ou tire suas dúvidas conosco</p>
+            </div>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="pedido">Fazer um Pedido</option>
+                            <option value="orcamento">Solicitar Orçamento</option>
+                            <option value="duvida">Tirar Dúvidas</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Enviar Mensagem</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Endereço</h3>
+                        <p>Rua das Delícias, 123<br>Centro - São Paulo, SP</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <h3>Telefone</h3>
+                        <p>(11) 98765-4321<br>(11) 3456-7890</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">⏰</div>
+                        <h3>Horário</h3>
+                        <p>Seg - Sex: 9h às 18h<br>Sáb: 9h às 14h</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">✉️</div>
+                        <h3>E-mail</h3>
+                        <p>contato@doceencanto.com.br<br>pedidos@doceencanto.com.br</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">🍬 Doce Encanto</h3>
+                    <p class="footer-text">Adoçando vidas desde 2014</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#products">Produtos</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Facebook">👍</a>
+                        <a href="#" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Doce Encanto. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
