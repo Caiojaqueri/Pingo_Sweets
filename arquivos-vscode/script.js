@@ -1,4 +1,4 @@
-// Menu Toggle
+// Alternar menu
 const menuToggle = document.querySelector(".menu-toggle")
 const nav = document.querySelector(".nav")
 
@@ -7,7 +7,7 @@ menuToggle.addEventListener("click", () => {
   nav.classList.toggle("active")
 })
 
-// Close menu when clicking on a link
+// Fechar menu ao clicar em um link
 document.querySelectorAll(".nav-link").forEach((link) => {
   link.addEventListener("click", () => {
     menuToggle.classList.remove("active")
@@ -15,7 +15,7 @@ document.querySelectorAll(".nav-link").forEach((link) => {
   })
 })
 
-// Smooth Scroll
+// Rolagem suave (smooth scroll)
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault()
@@ -29,7 +29,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   })
 })
 
-// Header Scroll Effect
+// Efeito no cabeçalho ao rolar a página
 const header = document.querySelector(".header")
 let lastScroll = 0
 
@@ -45,7 +45,7 @@ window.addEventListener("scroll", () => {
   lastScroll = currentScroll
 })
 
-// Favorite Button Toggle
+// Alternar estado do botão de favorito
 document.querySelectorAll(".favorite-btn").forEach((btn) => {
   btn.addEventListener("click", function (e) {
     e.stopPropagation()
@@ -59,7 +59,7 @@ document.querySelectorAll(".favorite-btn").forEach((btn) => {
   })
 })
 
-// Add to Cart Animation
+// Animação de adicionando ao carrinho
 document.querySelectorAll(".btn-add").forEach((btn) => {
   btn.addEventListener("click", function () {
     const originalText = this.textContent
@@ -73,7 +73,7 @@ document.querySelectorAll(".btn-add").forEach((btn) => {
   })
 })
 
-// Image Tilt Effect (3D hover effect)
+// Efeito tilt nas imagens (efeito 3D ao passar o mouse)
 document.querySelectorAll("[data-tilt]").forEach((element) => {
   element.addEventListener("mousemove", function (e) {
     const rect = this.getBoundingClientRect()
@@ -94,7 +94,7 @@ document.querySelectorAll("[data-tilt]").forEach((element) => {
   })
 })
 
-// Parallax Effect on Scroll
+// Efeito parallax ao rolar a página
 window.addEventListener("scroll", () => {
   const scrolled = window.pageYOffset
   const parallaxElements = document.querySelectorAll(".hero-images")
@@ -105,7 +105,7 @@ window.addEventListener("scroll", () => {
   })
 })
 
-// Intersection Observer for Animations
+// Intersection Observer para animações ao entrar na área visível
 const observerOptions = {
   threshold: 0.1,
   rootMargin: "0px 0px -100px 0px",
@@ -120,7 +120,7 @@ const observer = new IntersectionObserver((entries) => {
   })
 }, observerOptions)
 
-// Observe all product cards and feature items
+// Observar todos os cards de produto e itens de feature para animá-los
 document.querySelectorAll(".product-card, .feature-item, .info-card").forEach((el) => {
   el.style.opacity = "0"
   el.style.transform = "translateY(30px)"
@@ -128,7 +128,7 @@ document.querySelectorAll(".product-card, .feature-item, .info-card").forEach((e
   observer.observe(el)
 })
 
-// Form Submission
+// Envio do formulário
 const contactForm = document.getElementById("contactForm")
 
 contactForm.addEventListener("submit", function (e) {
@@ -156,7 +156,7 @@ contactForm.addEventListener("submit", function (e) {
   }, 1500)
 })
 
-// Image Lazy Loading Effect
+// Efeito de carregamento das imagens (lazy load visual)
 document.querySelectorAll("img").forEach((img) => {
   img.addEventListener("load", function () {
     this.style.animation = "fadeIn 0.5s ease"
@@ -164,14 +164,14 @@ document.querySelectorAll("img").forEach((img) => {
 })
 
 
-// Product Card Hover Sound Effect (visual feedback)
+// Efeito visual ao passar o mouse sobre o card do produto
 document.querySelectorAll(".product-card").forEach((card) => {
   card.addEventListener("mouseenter", function () {
     this.style.transition = "all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)"
   })
 })
 
-// Counter Animation for Stats (if you want to add stats later)
+// Animação de contador para estatísticas (caso queira adicionar depois)
 function animateCounter(element, target, duration = 2000) {
   let start = 0
   const increment = target / (duration / 16)
@@ -187,13 +187,13 @@ function animateCounter(element, target, duration = 2000) {
   }, 16)
 }
 
-// Add floating animation to hero images
+// Adicionar animação de flutuação às imagens do hero
 const heroImages = document.querySelectorAll(".hero-images .image-card")
 heroImages.forEach((img, index) => {
   img.style.animation = `float ${3 + index * 0.5}s ease-in-out infinite`
 })
 
-// Add CSS for float animation dynamically
+// Adicionar dinamicamente CSS para a animação de flutuar
 const style = document.createElement("style")
 style.textContent = `
     @keyframes float {
