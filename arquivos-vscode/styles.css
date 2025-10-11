@@ -743,3 +743,26 @@ body {
     text-align: center;
   }
 }
+
+/* Correção: evitar que .hero-images se sobreponha à seção de produtos
+   O script aplica transform à `.hero-images` para efeito de parallax, o que cria
+   um stacking context e pode fazer os filhos se sobreporem a seções seguintes.
+   Aqui forçamos o container do hero a não vazar e elevamos a seção de produtos
+   para ficar acima, sem alterar grandes comportamentos visuais. */
+.hero {
+  position: relative; /* cria contexto para z-index locais */
+  overflow: visible; /* permitir sombras, mas controlar stacking abaixo */
+}
+
+/* Impede que transform no container empurre visualmente os filhos sobre o próximo conteúdo */
+.hero-images {
+  transform: none !important; /* override do parallax aplicado via JS */
+}
+
+.products {
+  position: relative; /* necessário para z-index funcionar */
+  z-index: 2; /* coloca a seção de produtos acima do hero-images visualmente */
+}
+
+/* Alternativa: se quiser manter parallax, mova o transform para os próprios .image-card
+   em script.js em vez de aplicar ao container. */
