@@ -163,51 +163,6 @@ document.querySelectorAll("img").forEach((img) => {
   })
 })
 
-// Cursor Trail Effect (optional - decorative)
-let mouseX = 0
-let mouseY = 0
-const cursorCircles = []
-
-// Create cursor circles
-for (let i = 0; i < 3; i++) {
-  const circle = document.createElement("div")
-  circle.style.cssText = `
-        position: fixed;
-        width: ${20 - i * 5}px;
-        height: ${20 - i * 5}px;
-        border-radius: 50%;
-        background: var(--primary);
-        opacity: ${0.3 - i * 0.1};
-        pointer-events: none;
-        z-index: 9999;
-        transition: transform 0.1s ease;
-        display: none;
-    `
-  document.body.appendChild(circle)
-  cursorCircles.push(circle)
-}
-
-document.addEventListener("mousemove", (e) => {
-  mouseX = e.clientX
-  mouseY = e.clientY
-})
-
-function animateCursor() {
-  cursorCircles.forEach((circle, index) => {
-    setTimeout(() => {
-      circle.style.left = mouseX + "px"
-      circle.style.top = mouseY + "px"
-      circle.style.transform = "translate(-50%, -50%)"
-    }, index * 50)
-  })
-  requestAnimationFrame(animateCursor)
-}
-
-// Start cursor animation on desktop only
-if (window.innerWidth > 768) {
-  cursorCircles.forEach((circle) => (circle.style.display = "block"))
-  animateCursor()
-}
 
 // Product Card Hover Sound Effect (visual feedback)
 document.querySelectorAll(".product-card").forEach((card) => {
