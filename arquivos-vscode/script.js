@@ -203,4 +203,4 @@ style.textContent = `
 `
 document.head.appendChild(style)
 
-console.log("🍬 Doce Encanto - Site carregado com sucesso!")
+console.log("Pingo Swwets - Site carregado com sucesso!")
