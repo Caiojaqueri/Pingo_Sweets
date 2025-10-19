@@ -584,9 +584,9 @@ body {
 
 /* Rodapé */
 .footer {
-  background: var(--primary);
-  color: black;
-  padding: 3rem 0 1rem;
+  background: var(--border);
+  color: var(--primary);
+  padding: 3rem 0 1rem; 
 }
 
 .footer-content {
@@ -602,11 +602,11 @@ body {
 }
 
 .footer-text {
-  color: black;
+  color: var(--primary);
 }
 
 .footer-subtitle {
-  color: black;
+  color: var(--primary);
   margin-bottom: 1rem;
 }
 
@@ -618,13 +618,13 @@ body {
 }
 
 .footer-links a {
-  color: black;
+  color: var(--primary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: var(--surface);
+  color: var(--primary);
 }
 
 .social-links {
@@ -635,19 +635,25 @@ body {
 .social-links a {
   font-size: 1.5rem;
   transition: transform 0.3s ease;
-  color: black;
+  color: var(--primary);
 }
 
 .social-links a:hover {
   transform: scale(1.2);
-  color: var(--surface);
+  color: var(--primary);
 }
 
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--primary)
+}
+
+.footer-bottom a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 /* Animações */
