@@ -187,20 +187,5 @@ function animateCounter(element, target, duration = 2000) {
   }, 16)
 }
 
-// Adicionar animação de flutuação às imagens do hero
-const heroImages = document.querySelectorAll(".hero-images .image-card")
-heroImages.forEach((img, index) => {
-  img.style.animation = `float ${3 + index * 0.5}s ease-in-out infinite`
-})
-
-// Adicionar dinamicamente CSS para a animação de flutuar
-const style = document.createElement("style")
-style.textContent = `
-    @keyframes float {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-20px); }
-    }
-`
-document.head.appendChild(style)
 
 console.log("Pingo Swwets - Site carregado com sucesso!")
