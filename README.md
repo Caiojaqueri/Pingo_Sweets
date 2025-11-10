@@ -1,2 +1,2 @@
-# site-diogo
-Meu primeiro site profissional, feito para um amigo que tem uma loja de doces!
+# Pingo Sweets
+Site informativo feito para um amigo que tem uma lija de doces.
