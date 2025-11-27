@@ -790,6 +790,21 @@ body {
   .social-links {
     justify-content: center;
   }
+
+  /* Força os info-cards a ficarem em coluna única em telas menores
+     e evita que causem rolagem lateral. */
+  .contact-info {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+    max-width: 100%;
+    overflow: visible;
+  }
+
+  .info-card {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 @media (max-width: 480px) {
